@@ -5,5 +5,9 @@ body {
     height: 100vh;
   }
   h1,h2,h3,h4{
+    user-select: none;
     margin: 0;
+  }
+  span, a, p{
+    user-select: none;
   }

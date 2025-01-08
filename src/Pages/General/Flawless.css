@@ -1,0 +1,124 @@
+.flawless{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 850px;
+}
+.flawless-titles{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flawless-titles h3{
+    font-family: 'Open sans';
+    font-size: 37px;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(46, 46, 46);
+    text-align: center;
+}
+.flawless-titles span{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+.flawless-content__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 560px;
+    max-width: 770px;
+}
+#left-side h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+}
+#left-side img{
+    height: 200px;
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    background-color: #fff;
+}
+#left-side span {
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+#right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 670px;
+}
+.myWork{
+    padding: 20px 0px;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 3px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    border-color: rgb(255, 255, 255) solid;
+}
+.myWork h3{
+    width: 80%;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+}
+.myWork span{
+    width: 80%;
+    color: rgb(51, 51, 51);
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.quote{
+    padding: 20px 0px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 3px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+.quote h3{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: rgb(51, 51, 51);
+    font-family: 'Open Sans', sans-serif;
+}
+.quote span{
+    width: 80%;
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+blockquote{
+    border-left: 5px solid #eee;
+    padding-left: 20px;
+}

@@ -3,7 +3,7 @@ import './About.css';
 function About (){
     return(
         <>
-            <section className='about'>
+            <main className='about'>
                 <article className='about__wrapper'>
                     <h3 id='dear-girls'>Дорогие невесты!</h3>
                     <img src="/src/assets/generalPageImages/av.jpg" alt="Tiana" />
@@ -15,7 +15,7 @@ function About (){
                         <span>Также описаны особенности, которые нужно учитывать при выборе фасона (подбор по различным типам фигуры).</span>
                     </aside>
                 </article>
-            </section>
+            </main>
         </>
     )
 }

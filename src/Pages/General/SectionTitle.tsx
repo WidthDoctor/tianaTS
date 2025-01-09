@@ -1,7 +1,11 @@
 
 import "./SectionTitle.css";
+import React from 'react';
 
-function SectionTitle() {
+interface SectionTitleProps {
+  onSelectPage: (pageName: string) => void;
+}
+const SectionTitle: React.FC<SectionTitleProps> = ({ onSelectPage }) => {
 
     return (
         <>
@@ -9,7 +13,7 @@ function SectionTitle() {
                 <div className="title-wrapper">
                     <h2>Пошив свадебного платья</h2>
                     <span>Все, что нужно знать об этом - технология, организация работы, сроки, стоимость.</span>
-                    <button>Читать дальше..</button>
+                    <button onClick={() => onSelectPage('procedure')}>Читать дальше..</button>
                 </div>
             </section>
         </>

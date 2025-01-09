@@ -1,22 +1,19 @@
+import React from 'react';
 
-import "./GeneralPage.css";
-
-import MainMenu from "../MainMenu/MainMenu.tsx";
 import SectionTitle from "../General/SectionTitle.tsx";
 import About from "../General/About.tsx";
 import Slider from "../General/Slider.tsx";
 import Flawless from "../General/Flawless.tsx";
-import Footer from "../Footer/Footer.tsx";
-
-function General() {
+interface GeneralProps {
+  onSelectPage: (pageName: string) => void;
+}
+const General: React.FC<GeneralProps> = ({ onSelectPage }) => {
   return (
     <>
-      <MainMenu />
-      <SectionTitle />
+      <SectionTitle onSelectPage={onSelectPage}/>
       <About />
       <Slider />
       <Flawless />
-      <Footer />
     </>
   );
 }

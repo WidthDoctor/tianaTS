@@ -1,8 +1,11 @@
-import { useState } from "react";
+import React from "react";
 import "./MainMenu.css";
 
+interface MainMenuProps {
+  onSelectPage: (pageName: string) => void;
+}
 
-function MainMenu() {
+const MainMenu: React.FC<MainMenuProps> = ({ onSelectPage }) => {
   return (
     <>
       <section className="main-menu">
@@ -13,13 +16,13 @@ function MainMenu() {
           </div>
           <nav>
             <ul className="main-menu__list">
-              <li>
+              <li onClick={() => onSelectPage('general')}>
                 <a href="#">Главная</a>
               </li>
               <li className="first-dropdown">
                 <a href="#">Мастерская <span className="triangle">&#9660;</span></a>
                 <ul className="sub-menu">
-                  <li>
+                  <li onClick={() => onSelectPage('procedure')}>
                     <a href="#">Порядок работы</a>
                   </li>
                   <li className="types-selector">
